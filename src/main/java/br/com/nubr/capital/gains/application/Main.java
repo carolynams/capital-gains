@@ -1,4 +1,4 @@
-package br.com.nubr.tax.application;
+package br.com.nubr.capital.gains.application;
 
 import com.google.gson.Gson;
 import lombok.SneakyThrows;

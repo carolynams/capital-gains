@@ -1,4 +1,4 @@
-package br.com.nubr.tax.application.entity;
+package br.com.nubr.capital.gains.application.entity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
