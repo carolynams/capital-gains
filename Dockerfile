@@ -20,4 +20,4 @@ COPY . .
 RUN mvn package
 
 # Set the command to run the application
-CMD ["java", "-jar", "target/my-application.jar"]
+CMD ["java", "-jar", "target/capital-gains-1.0.0.jar"]

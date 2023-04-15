@@ -8,7 +8,7 @@
     <artifactId>capital-gains</artifactId>
     <version>1.0.0</version>
     <description>Project to calculate tax</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
