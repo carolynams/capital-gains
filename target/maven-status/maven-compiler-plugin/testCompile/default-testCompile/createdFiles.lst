@@ -1,0 +1,16 @@
+br\com\nubr\capital\gains\application\functions\DecimalFormatTest.class
+br\com\nubr\capital\gains\application\fixtures\CaseSevenFixture.class
+br\com\nubr\capital\gains\application\functions\WeightedAverageCalculatorTest.class
+br\com\nubr\capital\gains\application\fixtures\CaseOneFixture.class
+br\com\nubr\capital\gains\application\functions\CapitalGainsTest.class
+br\com\nubr\capital\gains\application\fixtures\CaseEightFixture.class
+br\com\nubr\capital\gains\application\fixtures\CaseFiveFixture.class
+br\com\nubr\capital\gains\application\fixtures\CaseSixFixture.class
+br\com\nubr\capital\gains\application\fixtures\CaseOneAndTwoFixture.class
+br\com\nubr\capital\gains\application\functions\InputHandlerTest.class
+br\com\nubr\capital\gains\application\fixtures\CaseFourFixture.class
+br\com\nubr\capital\gains\application\fixtures\CaseThreeFixture.class
+br\com\nubr\capital\gains\application\fixtures\CaseExampleFixture.class
+br\com\nubr\capital\gains\application\fixtures\CaseTwoFixture.class
+br\com\nubr\capital\gains\application\fixtures\InputFixture.class
+br\com\nubr\capital\gains\application\functions\FinancialCalculatorTest.class

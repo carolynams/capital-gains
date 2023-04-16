@@ -1,0 +1,9 @@
+br\com\nubr\capital\gains\application\functions\DecimalFormat.class
+br\com\nubr\capital\gains\application\functions\InputHandler$1.class
+br\com\nubr\capital\gains\application\functions\InputHandler.class
+br\com\nubr\capital\gains\application\Application.class
+br\com\nubr\capital\gains\application\functions\WeightedAverageCalculator.class
+br\com\nubr\capital\gains\application\entity\Input$InputBuilder.class
+br\com\nubr\capital\gains\application\functions\FinancialCalculator.class
+br\com\nubr\capital\gains\application\functions\CapitalGains.class
+br\com\nubr\capital\gains\application\entity\Input.class
