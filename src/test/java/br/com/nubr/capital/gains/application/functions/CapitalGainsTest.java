@@ -12,7 +12,7 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CapitalGainsTest {
+public class CapitalGainsTest {
 
     private static List<Arguments> inputs() {
         return Arrays.asList(
@@ -45,7 +45,7 @@ class CapitalGainsTest {
 
     @ParameterizedTest
     @MethodSource("inputs")
-    void testCalculateCapitalGains(List<List<Input>> input, List<List<Map<String, String>>> expected) {
+    public void testCalculateCapitalGains(List<List<Input>> input, List<List<Map<String, String>>> expected) {
         List<List<Map<String, String>>> taxa = CapitalGains.calculateCapitalGains(input);
         assertEquals(expected, taxa);
     }

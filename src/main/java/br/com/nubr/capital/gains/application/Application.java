@@ -12,11 +12,12 @@ public class Application {
 
     @SneakyThrows
     public static void main(String[] args) {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        var lists = inputHandle(reader);
+        while (true) {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            var lists = inputHandle(reader);
 
-        var taxa = CapitalGains.calculateCapitalGains(lists);
-        System.out.println(taxa);
+            var taxa = CapitalGains.calculateCapitalGains(lists);
+            System.out.println(taxa);
+        }
     }
-
 }

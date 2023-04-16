@@ -6,7 +6,7 @@ import java.text.DecimalFormatSymbols;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class DecimalFormatTest {
+public class DecimalFormatTest {
 
     @Test
     public void testDefineDecimalFormat() {
