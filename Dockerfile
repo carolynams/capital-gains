@@ -1,23 +1,21 @@
 # Use an official Java runtime as a parent image
-FROM openjdk:11-jdk-slim
+FROM maven:3.6.0-jdk-11-slim AS builder
 
-# Set the working directory to /app
-WORKDIR /app
+# add pom.xml and source code
+ADD ./pom.xml pom.xml
 
-# Copy the pom.xml file to the working directory
-COPY pom.xml .
-
-# Install Maven
-RUN apk add --no-cache maven
-
-# Install the project dependencies
-RUN mvn dependency:go-offline
-
-# Copy the rest of the application code to the working directory
-COPY . .
-
-# Compile the Java code
+# package jar
+RUN mvn clean verify --fail-never
 RUN mvn package
 
-# Set the command to run the application
-CMD ["java", "-jar", "target/capital-gains-1.0.0.jar"]
+# Second stage: minimal runtime environment
+From  openjdk:11-jre-slim
+
+WORKDIR /app
+
+# copy jar from the first stage
+COPY --from=builder target/capital-gains-1.0.0-jar-with-dependencies.jar /app/capital-gains-1.0.0-jar-with-dependencies.jar
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "capital-gains-1.0.0-jar-with-dependencies.jar"]
